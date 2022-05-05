@@ -1,6 +1,6 @@
 # Unhandled
 
-A POC tool to auto exploit leaked handles for UAC bypass/privilege escalation
+A POC tool to auto exploit leaked handles for UAC bypass/privilege escalation.</br>
 Only supports exploitation of process handles as of now.
 
 References
